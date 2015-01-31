@@ -18,7 +18,7 @@ class sstimer
 {     
   public: 
     sstimer(int PIN,long unsigned ON_DURATION, long unsigned OFF_DURATION);
-    void startsstimer();
+    void check();
   
   private:   
     unsigned long _tsaved;

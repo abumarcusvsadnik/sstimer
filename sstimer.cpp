@@ -23,7 +23,7 @@ sstimer::sstimer(int PIN,long unsigned ON_DURATION, long unsigned OFF_DURATION)
  pinMode(_PIN, OUTPUT); 
 }
 
-void sstimer::startsstimer()
+void sstimer::check()
 {   
   if(!_PIN_STATUS)
       {            
