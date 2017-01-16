@@ -17,14 +17,17 @@
 class sstimer 
 {     
   public: 
-    sstimer(int PIN,long unsigned ON_DURATION, long unsigned OFF_DURATION);
-    void check();
+		sstimer(int PIN,long unsigned ON_DURATION, long unsigned OFF_DURATION, int NUM_CYCLES);
+		void check();
+		void restart();
   
   private:   
-    unsigned long _tsaved;
-    boolean _PIN_STATUS;
-    int _PIN;
-    long unsigned _ON_DURATION;
-    long unsigned _OFF_DURATION;   
+		unsigned long _tsaved;
+		int _curCycle;
+		boolean _PIN_STATUS;
+		int _PIN;
+		long unsigned _ON_DURATION;
+		long unsigned _OFF_DURATION; 
+		int _NUM_CYCLES;
 };
 #endif
